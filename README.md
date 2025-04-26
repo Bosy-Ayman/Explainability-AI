@@ -50,17 +50,21 @@
 - **Documentation**: [ALE Plot - Alibi Documentation](https://docs.seldon.io/projects/alibi/en/latest/examples/ale_classification.html)
 
 ## Permutation Feature Importance
-- **Description**: Measures how much the model's performance drops when a feature's values are randomly shuffled.
+- **Description**: Measures how much the model's performance drops when a feature's values are randomly shuffled
+- **Documentation**:
+  [PFI - scikit learn](https://scikit-learn.org/stable/auto_examples/inspection/index.html?utm_source=chatgpt.com)
+
 
 ## LOFO (Leave One Feature Out) Importance
 - **Description**: Measures feature importance by removing one feature at a time and checking how the model's performance changes.
+- 
 
 ## Global Surrogate Model
 - **Description**: Train a simple model (like decision tree) to approximate and explain the behavior of a complex model.
 
 ## Feature Interaction: H-Statistic
 - **Description**: Measures how strongly two or more features interact and influence the prediction.
-
+- **Source**: [H statistics](https://github.com/a-data-odyssey/XAI-tutorial/blob/main/src/model_agnostic/h_stat.ipynb)
 ---
 
 # Lab 8 - Global Agnostic Methods
