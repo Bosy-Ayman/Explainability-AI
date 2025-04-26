@@ -17,3 +17,38 @@
 | 12   | Time Series Analysis Algorithms and EDA Techniques - Part 1 | Case Study Lab           |                                    |
 | 13   | Time Series Analysis Algorithms and EDA Techniques - Part 2 | Lab Exam 2           |                                    |
 | 14   | Case Study - Computer Vision                 | Project Phase 2                          |                                    |
+
+# Lab 7 - Local Agnostic Methods
+
+## Partial Dependence Plot (PDP)
+- **Description**: Shows how a feature affects the predicted outcome on average.
+- **Documentation**: [Partial Dependence Plot - Scikit Learn](https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_partial_dependence_visualization_api.html)
+
+## Individual Conditional Expectation (ICE) Plot
+- **Description**: Like PDP, but shows the effect for each individual observation separately.
+
+## Accumulated Local Effects (ALE) Plot
+- **Description**: Better than PDP when features are correlated. Shows the effect of a feature by considering small changes.
+- **Documentation**: [ALE Plot - Alibi Documentation](https://docs.seldon.io/projects/alibi/en/latest/examples/ale_classification.html)
+
+## Permutation Feature Importance
+- **Description**: Measures how much the model's performance drops when a feature's values are randomly shuffled.
+
+## LOFO (Leave One Feature Out) Importance
+- **Description**: Measures feature importance by removing one feature at a time and checking how the model's performance changes.
+
+## Global Surrogate Model
+- **Description**: Train a simple model (like decision tree) to approximate and explain the behavior of a complex model.
+
+## Feature Interaction: H-Statistic
+- **Description**: Measures how strongly two or more features interact and influence the prediction.
+
+# Lab 8 - Global Agnostic Methods
+
+## LIME (Local Interpretable Model-Agnostic Explanations)
+- **Description**: Explains a prediction by training a simple interpretable model around a local area of that prediction.
+- **Documentation**: [LIME Documentation](https://lime-ml.readthedocs.io/en/latest/index.html)
+
+## SHAP (SHapley Additive exPlanations)
+- **Description**: Explains predictions by fairly distributing the contribution among features based on Shapley values from game theory.
+- **Documentation**: [SHAP Documentation](https://shap.readthedocs.io/en/latest/index.html)
